@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Application météo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Application météo</h1>
+  <form id="search-form">
+    <label for="city-input">Ville :</label>
+    <input type="text" id="city-input" name="city">
+    <button type="submit">Rechercher</button>
+  </form>
+  <div id="weather-display">
+    <h2>Prévisions météorologiques</h2>
+    <p><strong>Température :</strong> <span id="temperature"></span></p>
+    <p><strong>Humidité :</strong> <span id="humidity"></span></p>
+    <p><strong>Vitesse du vent :</strong> <span id="wind-speed"></span></p>
+    <p><strong>Description :</strong> <span id="weather-description"></span></p>
+    <img id="weather-icon" src="" alt="">
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app/app.js"></script>
+</body>
+</html>
